@@ -1,0 +1,38 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
+import java.util.Scanner;  // Import the Scanner class
+public class AddTwoInts {
+    public static void main(String[] args) {
+     System.out.println("\n\n welcome to the double int program! \n\n ");
+
+
+        int firstNum = 0;
+        int secomdNum = 0;
+        int sumOfBothNum = 0;
+
+        System.out.println("\n The value of sumOfBothNumbers is " + sumOfBothNum);
+
+        Scanner myScannerObj = new Scanner(System.in);  // Create a Scanner object
+        // ask user for first int
+        System.out.println("\n pls enter a whole number: ");
+        firstNum = myScannerObj.nextInt();
+       // unit test for our first user imput
+       System.out.println("\n the value of firstMum is: " + firstNum);
+
+        // ask user for second int
+        System.out.println("\n pls enter a 2nd whole number: ");
+        secomdNum = myScannerObj.nextInt();
+
+        // unot txt for our socond user input
+        System.out.println("\n the value of a secondNum is: " + secomdNum);
+        firstNum = myScannerObj.nextInt();
+// processing
+        // add the two unts fro, use
+        // the total of firstMu, amd secNum will be stored in
+        // the variable named: sum ofBothNumbers
+        sumOfBothNum = firstNum + secomdNum;
+        // output value of variable name
+        System.out.println("\n The value of sumOfBothNumbers is: " + sumOfBothNum);
+    }
+}
