@@ -1,6 +1,3 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-
 import java.util.Scanner;  // Import the Scanner class
 public class LargestOf3 {
     public static void main(String[] args) {
@@ -8,43 +5,43 @@ public class LargestOf3 {
 
 
         int firstNum = 0;
-        int secomdNum = 0;
+        int secondNum = 0;
         int thirdNum = 0;
         int largestOfThree = 0;
 
 
         Scanner myScannerObj = new Scanner(System.in);  // Create a Scanner object
 
-        firstNum = myScannerObj.nextInt();
-        // unit test for our first user imput
-        System.out.println("\n the value of firstMum is: " + firstNum);
-
-
-        // unot txt for our socond user input
-        System.out.println("\n the value of a secondNum is: " + secomdNum);
+        // ask user 4 int
+        System.out.println("\n pls enter a whole #: ");
         firstNum = myScannerObj.nextInt();
 
-        // unot txt for our socond user input
-        System.out.println("\n the value of a thirdNum is: " + thirdNum);
+
+        // ask user 4 2nd input
+        System.out.println("\n pls enter a whole 2nd #: ");
+        secondNum = myScannerObj.nextInt();
+
+        //  // ask user 4 3rd input
+        System.out.println("\n the value of a thirdNum is: " );
         thirdNum = myScannerObj.nextInt();
 
 // processing
         // com[are the omputs with nested if statements
 
-        if (firstNum > secomdNum) {
+        if (firstNum > secondNum) {
             if (firstNum > thirdNum) {
                 largestOfThree = firstNum;
             } else {
                 largestOfThree = thirdNum;
             }
         } else {
-            if (secomdNum > thirdNum) {
-                largestOfThree = secomdNum;
+            if (secondNum > thirdNum) {
+                largestOfThree = secondNum;
             } else {
                 largestOfThree = thirdNum;
             }
         }
         // output largest of three
-            System.out.println("\n largest of three is: " + largestOfThree);
-        }
+        System.out.println("\n largest of three is: " + largestOfThree);
     }
+}
