@@ -1,0 +1,56 @@
+import java.util.Scanner;  // Import the Scanner class
+// Jovani Lopez 9/20/24
+// payroll.java
+// input: User's name, weekly hrs worked (mp hr fractopm), user's payrate
+// processing: total weekly pay including overtime if more than  40 hrs worked tht week
+// output: polite greeting tp the user and regular and overtime pay
+
+public class payroll {
+    public static void main(String[] args) {
+        System.out.println("\n Welcome to payroll program.");
+
+        // variables
+        int hrsWorked = 0;
+        int overtimeHours;
+        int payRate;
+        int weeklyPayWithoutOvertime;
+        int anotherNumber;
+        double payRate = 0.0;
+        String userName = "";
+        double weeklyPay = 0.0;
+        double overTinePay = 0.0;
+
+        Scanner myScannerObj = new Scanner(System.in);
+
+        System.out.println("\n ");
+
+        // get the users name
+        System.out.println("\n Pls enter ur name: ");
+        userName = myScannerObj.nextLine();
+
+        System.out.println("\n Hello, " + userName + ". Have a good day. ");
+
+        // output statements prompting the user for hrs worked
+        System.out.println(" \n Pls enter hrs worked (whole #): ");
+        // UsE THE SCANNER TP GET INPUT FROM THIS PROMPT
+        hrsWorked = myScannerObj.nextInt();
+
+        System.out.println(" \n Pls enter hrly pay rate: ");
+        payRate = myScannerObj.nextInt();
+
+        // create output statement to the user echoing the user's input
+        System.out.println(" \n Hey " + userName + " you worked: " + hrsWorked + " hours this week.");
+
+        // processing
+        overtimeHours = hrsWorked - 40;
+        if (hrsWorked > 40) {
+            overTinePay = overtimeHours * payRate * 1.5;
+        } else {
+            overTinePay = 0;
+        }
+
+        // calc weekly regular pay
+        if (hrsWorked > 40) { weeklyPayWithoutOvertime = hrly *
+
+    }
+}
