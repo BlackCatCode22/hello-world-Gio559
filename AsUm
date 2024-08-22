@@ -1,0 +1,113 @@
+import java.util.Scanner;  // Import the Scanner class
+// Jovani Lopez 9/20/24
+// payroll.java
+// input: User's name, weekly hrs worked (mp hr fractopm), user's payrate
+// processing: total weekly pay including overtime if more than  40 hrs worked tht week
+// output: polite greeting tp the user and regular and overtime pay
+
+public class payroll {
+
+    static void theHelloMethod(){
+        System.out.println("\n Hello from theHellowMethod()");
+    }
+ // create method tht gets input
+    // this is a methods def
+    static void  aPersonalGreeting(String someName) {
+        System.out.println("\n Hello " + someName + ", have good day !");
+
+    }
+
+    // create a method tht gets two int  & returns their sum
+    // create two int parameters
+    static int sumTwoInts(int num1, int num2){
+        int mySum = 0;
+        mySum = num1 + num2;
+        return mySum;
+    }
+// call mew sum method
+
+
+
+    public static void main(String[] args) {
+    //    System.out.println("\n Welcome to payroll program.");
+// variables
+        String theUserName = "";
+
+        Scanner scanner = new Scanner(System.in);
+
+        // users name
+        System.out.println("\n Enter name: ");
+        theUserName = scanner.nextLine();
+
+        // call (invoke) our
+        aPersonalGreeting(theUserName);
+
+        theHelloMethod();
+
+        // var
+        int aSum = 0;
+
+// call sum
+        aSum = sumTwoInts(3, 4);
+        System.out.println("\n aSum is: " + aSum);
+        System.out.println("\n this is the end of my program");
+
+
+
+        /*
+        // variables
+        int hrsWorked = 0;
+        int overtimeHours;
+        double payRate = 0.0;
+        String userName = "";
+        double weeklyPay = 0.0;
+        double overtimePay = 0.0;
+        double regularPay = 0.0;
+        double regHrs = 0.0;
+
+        Scanner myScannerObj = new Scanner(System.in);
+
+        System.out.println("\n ");
+
+        // get the user's name
+        System.out.println("\n Please enter your name: ");
+        userName = myScannerObj.nextLine();
+
+        System.out.println("\n Hello, " + userName + ". Have a good day. ");
+
+        // output statements prompting the user for hrs worked
+        System.out.println(" \n Please enter hours worked (whole number): ");
+        // Use the Scanner to get input from this prompt
+        hrsWorked = myScannerObj.nextInt();
+        //  System.out.println(" \n Please enter hourly pay rate: ");
+        System.out.println(" \n Please enter hourly pay rate: ");
+        payRate = myScannerObj.nextDouble();
+
+        // create output statement to the user echoing the user's input
+        System.out.println(" \n Hey " + userName + ", you worked: " + hrsWorked + " hours this week.");
+
+        // processing
+        if (hrsWorked > 40) {
+            System.out.println(" \n Your overtime pay is: " + overtimePay);
+            overtimeHours = hrsWorked - 40;
+            overtimePay = overtimeHours * payRate * 1.5;
+        } else {
+            overtimeHours = 0;
+            overtimePay = 0;
+             regularPay = payRate * payRate;
+        }
+
+        // calculate weekly regular pay
+   //     double regularPay = Math.min(hrsWorked, 40) * payRate;
+      //  weeklyPay = regularPay + overtimePay;
+System.out.println("%, .2f");
+        // output the results
+
+        System.out.println(" \n Your regular hrs is: " + regHrs );
+        System.out.println(" \n Your regular pay is: " + regularPay );
+        System.out.println(" \n Your overtime pay is: " + overtimePay);
+        System.out.println(" \n Your total weekly pay is: " + weeklyPay);
+      */
+    }
+
+}
